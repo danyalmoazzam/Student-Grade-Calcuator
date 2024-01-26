@@ -1,0 +1,131 @@
+body {
+  background:#185adb;
+  font-size: 12px;
+}
+
+body, button, input {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgb(83, 83, 83);
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 40px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  color: #185adb;
+  font-size: 26px;
+  text-transform: uppercase;
+  border-left: 4px solid #185adb;
+  padding: 10px;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: rgb(225, 225, 225);
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .6s;
+}
+
+.app-form-control::placeholder {
+  color:rgb(255, 255, 255);
+}
+
+.app-form-control:focus {
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+.app-form-button {
+  padding: 10px;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #185adb;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.app-form-button:hover {
+  color: #3276ff;
+}
+
+.showdata{
+  text-align: center;
+  color: #185adb;
+  font-size: 1.2rem;
+  padding-top: -10px;
+  padding-bottom: 10px;
+}
+
+
+#result{
+  text-align: center;
+  color: #185adb;
+  font-size: 1.4rem;
+  padding-top: -10px;
+  padding-bottom: 10px;
+}
